@@ -10,4 +10,19 @@ class HomePageController extends Controller
     {
         return view('home');
     }
+
+    public function features()
+    {
+        return view('features');
+    }
+
+    public function products()
+    {
+        return view('products');
+    }
+
+    public function contactus()
+    {
+        return view('contactus');
+    }
 }

@@ -15,10 +15,10 @@
 </head>
 
 <body class="container mx-auto">
-    <div class=" p-3  absolute top-0 left-0 bg-gradient w-screen h-screen">
+    <div class=" p-3  absolute top-0 left-0 bg-gradient w-screen h-screen" >
 
     </div>
-    <nav class=" flex justify-between p-3 text-black ">
+    <nav class=" flex justify-between p-3 text-black flex-wrap">
         <ul class="flex items-center gap-5">
             <li>
                 <img src="{{ asset('Icon-dark.png') }}" width="40px" height="40px" alt="">
@@ -29,21 +29,21 @@
         </ul>
         <ul class="flex items-center gap-5 justify-center mx-auto">
             <li>
-                <a href="" class="text-base {{ Request::is('/') ? 'font-bold text-white' : '' }}">Home</a>
+                <a href="/" class="text-base hover:text-white {{ Request::is('/') ? 'font-bold text-white' : '' }}">Home</a>
             </li>
             <li>
-                <a href="" class="text-base">Features</a>
+                <a href="/features" class="text-base hover:text-white {{ Request::is('features') ? 'font-bold text-white' : '' }}">Features</a>
             </li>
             <li>
-                <a href="" class="text-base">Products</a>
+                <a href="/products" class="text-base hover:text-white {{ Request::is('products') ? 'font-bold text-white' : '' }}">Products</a>
             </li>
             <li>
-                <a href="" class="text-base">Contact Us</a>
+                <a href="/contactus" class="text-base hover:text-white {{ Request::is('contactus') ? 'font-bold text-white' : '' }}">Contact Us</a>
             </li>
         </ul>
         <ul class="flex items-center gap-5">
             <li>
-                <button class="rounded px-3 py-1  outline outline-1 outline-green-200 hover:shadow-lg text-green-200">Order Now</button>
+                <button class="rounded px-3 py-1 outline outline-1 outline-green-200 hover:shadow-lg text-green-600">Order Now</button>
             </li>
         </ul>
     </nav>

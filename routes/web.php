@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomePageController::class, 'index']);
+Route::get('/features', [HomePageController::class, 'features']);
+Route::get('/products', [HomePageController::class, 'products']);
+Route::get('/contactus', [HomePageController::class, 'contactus']);
