@@ -9,7 +9,7 @@
             "dest": "/api/index.php"
         },
         {
-            "src": "/images/(.*)",
+            "src": "/build/assets/(.*)",
             "dest": "/api/images.php"
         }
     ],
