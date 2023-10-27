@@ -1,8 +1,3 @@
 <?php
 
-
-$files = glob(__DIR__ . '/../public/*');
-
-foreach ($files as $file) {
-    require($file);
-}
+require __DIR__ . '/../public/index.php';
