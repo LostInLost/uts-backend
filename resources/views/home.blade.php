@@ -38,7 +38,7 @@
         <div class="col-span-2 flex justify-center -mt-5">
             <div class="grid grid-cols-5 gap-5">
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300">
-                    <img src="{{ asset('google.png') }}" width="200px" height="100px" alt="">
+                    {{-- <img src="{{ asset('google.png') }}" width="200px" height="100px" alt=""> --}}
                 </div>
                 <div class="my-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400">
                     <img src="{{ asset('ubig-logo-contact.png') }}"  alt="">
