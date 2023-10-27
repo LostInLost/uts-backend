@@ -21,7 +21,7 @@
     <nav class=" flex justify-between p-3 text-black flex-wrap">
         <ul class="flex items-center gap-5">
             <li>
-                <img src="{{ public_path('Icon-dark.png') }}" width="40px" height="40px" alt="">
+                <img src="{{ asset('Icon-dark.png') }}" width="40px" height="40px" alt="">
             </li>
             <li>
                 <h1 class="text-[27px] font-bold">Lastation.</h1>
@@ -54,6 +54,7 @@
     <script>
         AOS.init()
     </script>
+    <script defer src="{{ asset('build/assets/app-02317797.js') }}"></script>
 </body>
 
 </html>
