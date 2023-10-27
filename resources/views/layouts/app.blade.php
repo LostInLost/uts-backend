@@ -54,7 +54,6 @@
     <script>
         AOS.init()
     </script>
-    <script defer src="{{ asset('build/assets/app-02317797.js') }}"></script>
 </body>
 
 </html>
