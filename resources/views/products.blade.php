@@ -11,7 +11,7 @@
                 <div class="rounded bg-white shadow-md w-[400px]">
                     <div class="divide-y">
                         <div class="relative">
-                            <img src="{{ asset('leline.png') }}" class="rounded-t" alt="">
+                            <img src="{{ Vite::asset('resources/images/leline.png') }}" class="rounded-t" alt="">
                         </div>
                         <div class="p-3">
                             <h1 class="font-bold text-[24px] ">Lelang Online</h1>
@@ -24,7 +24,7 @@
                 <div class="rounded bg-white shadow-md w-[400px]">
                     <div class="divide-y">
                         <div class="relative">
-                            {{-- <img src="{{ asset('leline.png') }}" class="rounded-t" alt=""> --}}
+                            <img src="{{ Vite::asset('resources/images/leline.png') }}" class="rounded-t" alt="">
                         </div>
                         <div class="p-3">
                             <h1 class="font-bold text-[24px] text-center">Coming Soon</h1>

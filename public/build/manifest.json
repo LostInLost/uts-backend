@@ -4,6 +4,62 @@
     "isEntry": true,
     "src": "resources/css/app.css"
   },
+  "resources/images/1200px-Logo-Tokopedia.png": {
+    "file": "assets/1200px-Logo-Tokopedia-67a56e34.png",
+    "src": "resources/images/1200px-Logo-Tokopedia.png"
+  },
+  "resources/images/CMS.jpg": {
+    "file": "assets/CMS-e7ea8623.jpg",
+    "src": "resources/images/CMS.jpg"
+  },
+  "resources/images/Icon-dark.png": {
+    "file": "assets/Icon-dark-d42a0cf6.png",
+    "src": "resources/images/Icon-dark.png"
+  },
+  "resources/images/company1.png": {
+    "file": "assets/company1-f8293ae2.png",
+    "src": "resources/images/company1.png"
+  },
+  "resources/images/database.png": {
+    "file": "assets/database-d931d2a5.png",
+    "src": "resources/images/database.png"
+  },
+  "resources/images/features-icon.png": {
+    "file": "assets/features-icon-8d3131fa.png",
+    "src": "resources/images/features-icon.png"
+  },
+  "resources/images/google.png": {
+    "file": "assets/google-50eeaddd.png",
+    "src": "resources/images/google.png"
+  },
+  "resources/images/leline.png": {
+    "file": "assets/leline-820cbe47.png",
+    "src": "resources/images/leline.png"
+  },
+  "resources/images/main-logo-hires.png": {
+    "file": "assets/main-logo-hires-7492fe03.png",
+    "src": "resources/images/main-logo-hires.png"
+  },
+  "resources/images/monitor.png": {
+    "file": "assets/monitor-835b25a4.png",
+    "src": "resources/images/monitor.png"
+  },
+  "resources/images/pngimg.com - microsoft_PNG10.png": {
+    "file": "assets/pngimg.com - microsoft_PNG10-4bad04d3.png",
+    "src": "resources/images/pngimg.com - microsoft_PNG10.png"
+  },
+  "resources/images/service.png": {
+    "file": "assets/service-3ce27d13.png",
+    "src": "resources/images/service.png"
+  },
+  "resources/images/ubig-logo-contact.png": {
+    "file": "assets/ubig-logo-contact-2edbf15b.png",
+    "src": "resources/images/ubig-logo-contact.png"
+  },
+  "resources/images/—Pngtree—gear parts icon cartoon_4630148.png": {
+    "file": "assets/—Pngtree—gear parts icon cartoon_4630148-dd012f50.png",
+    "src": "resources/images/—Pngtree—gear parts icon cartoon_4630148.png"
+  },
   "resources/js/app.js": {
     "file": "assets/app-02317797.js",
     "isEntry": true,

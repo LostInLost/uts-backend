@@ -3,7 +3,7 @@
 
 @section('content')
     <section class="font-bold grid grid-cols-2 p-5">
-        {{-- <img src="{{ asset('—Pngtree—gear parts icon cartoon_4630148.png') }}" class="absolute top-[30%] " width="70px" alt=""> --}}
+        {{-- <img src="{{ Vite::asset('resources/images/—Pngtree—gear parts icon cartoon_4630148.png') }}" class="absolute top-[30%] " width="70px" alt=""> --}}
         <div class="col-span-2">
             <h1 class="text-[48px] font-bold text-center" data-aos="fade-down" data-aos-duration="1000">Anda Katakan, Kami Kerjakan.</h1>
         </div>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class=" mt-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-            <img src="{{ asset('company1.png') }}" class="floating-img absolute" alt="">
+            <img src="{{ Vite::asset('resources/images/company1.png') }}" class="floating-img absolute" alt="">
         </div>
         <div class="mt-[250px] xl:col-span-2 md:col-span-1 flex justify-center flex-wrap gap-5">
             <button
@@ -38,19 +38,19 @@
         <div class="col-span-2 flex justify-center -mt-5">
             <div class="grid grid-cols-5 gap-5">
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300">
-                    {{-- <img src="{{ asset('google.png') }}" width="200px" height="100px" alt=""> --}}
+                    <img src="{{ Vite::asset('resources/images/google.png') }}" width="200px" height="100px" alt="">
                 </div>
                 <div class="my-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400">
-                    <img src="{{ asset('ubig-logo-contact.png') }}"  alt="">
+                    <img src="{{ Vite::asset('resources/images/ubig-logo-contact.png') }}"  alt="">
                 </div>
                 <div class="my-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">
-                    <img src="{{ asset('main-logo-hires.png') }}"  alt="">
+                    <img src="{{ Vite::asset('resources/images/main-logo-hires.png') }}"  alt="">
                 </div>
                 <div class="my-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">
-                    <img src="{{ asset('1200px-Logo-Tokopedia.png') }}" class="w-[200px]  -ml-[80px]"  alt="">
+                    <img src="{{ Vite::asset('resources/images/1200px-Logo-Tokopedia.png') }}" class="w-[200px]  -ml-[80px]"  alt="">
                 </div>
                 <div class="my-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1700">
-                    <img src="{{ asset('pngimg.com - microsoft_PNG10.png') }}" class="w-[200px] -ml-[80px]"  alt="">
+                    <img src="{{ Vite::asset('resources/images/pngimg.com - microsoft_PNG10.png') }}" class="w-[200px] -ml-[80px]"  alt="">
                 </div>
             </div>
         </div>
