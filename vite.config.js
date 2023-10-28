@@ -9,7 +9,7 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    // build: {
-    //     assetsInlineLimit: 0,
-    // },
+    build: {
+        assetsInlineLimit: 0,
+    },
 });
