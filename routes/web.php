@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomePageController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +19,17 @@ Route::get('/', [HomePageController::class, 'index']);
 Route::get('/features', [HomePageController::class, 'features']);
 Route::get('/products', [HomePageController::class, 'products']);
 Route::get('/contactus', [HomePageController::class, 'contactus']);
+
+Route::get('/register', [AuthController::class, 'register']);
+Route::post('/register', [AuthController::class, 'store']);
+
+Route::middleware('guest')->group(function() {
+    Route::get('/login', [AuthController::class, 'index'])->name('login');
+    Route::post('/login', [AuthController::class, 'auth']);
+});
+
+Route::middleware('auth')->group(function() {
+    Route::get('/logout', [AuthController::class, 'logout']);
+    Route::get('/dashboard', [AuthController::class, 'logout']);
+
+});

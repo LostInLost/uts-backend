@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('build/assets/app-1a7f99d6.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('build/assets/app-1a7f99d6.css') }}">
     <script type="module" src="{{ asset('build/assets/app-02317797.js') }}"></script>
+     --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Lastation</title>
 
 </head>
@@ -45,6 +47,9 @@
         <ul class="flex items-center gap-5">
             <li>
                 <button class="rounded px-3 py-1 outline outline-1 outline-green-200 hover:shadow-lg text-green-600">Order Now</button>
+            </li>
+            <li>
+                <a href="/login" class="rounded px-3 py-1 outline outline-1 outline-blue-500 hover:shadow-lg text-white bg-blue-600 hover:bg-blue-500 cursor-pointer">Login</a>
             </li>
         </ul>
     </nav>
