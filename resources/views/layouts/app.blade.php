@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('build/assets/app-1a7f99d6.css') }}">
+    <script type="module" src="{{ asset('build/assets/app-02317797.js') }}"></script>
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
     <title>Lastation</title>
 
 </head>
@@ -21,7 +23,7 @@
     <nav class=" flex justify-between p-3 text-black flex-wrap">
         <ul class="flex items-center gap-5">
             <li>
-                <img src="{{ Vite::asset('resources/images/Icon-dark.png') }}" width="40px" height="40px" alt="">
+                <img src="{{ asset('build/assets/Icon-dark-d42a0cf6.png') }}" width="40px" height="40px" alt="">
             </li>
             <li>
                 <h1 class="text-[27px] font-bold">Lastation.</h1>
