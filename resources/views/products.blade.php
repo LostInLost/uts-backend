@@ -8,19 +8,21 @@
         </div>
         <div class="col-span-2 mx-auto">
             <div class="grid grid-cols-2 gap-5">
-                <div class="rounded bg-white shadow-md w-[400px]">
-                    <div class="divide-y">
-                        <div class="relative">
-                            <img src="{{ asset('build/assets/leline-820cbe47.png') }}" class="rounded-t" alt="">
+                @foreach ($products as $data)
+                    <div class="rounded bg-white shadow-md w-[400px]">
+                        <div class="divide-y">
+                            <div class="relative">
+                                <img src="{{ asset($data->photo) }}" class="rounded-t" alt="">
+                            </div>
+                            <div class="p-3">
+                                <h1 class="font-bold text-[24px] ">{{ $data->title }}</h1>
+                            </div>
+                            <p class="p-3">
+                                {{ $data->description }}
+                            </p>
                         </div>
-                        <div class="p-3">
-                            <h1 class="font-bold text-[24px] ">Lelang Online</h1>
-                        </div>
-                        <p class="p-3">
-                            Aplikasi yang memudahkan pelelang dan penawar melakukan lelang secara Online.
-                        </p>
                     </div>
-                </div>
+                @endforeach
                 <div class="rounded bg-white shadow-md w-[400px]">
                     <div class="divide-y">
                         <div class="relative">
@@ -37,7 +39,7 @@
                         <button
                             class="transition rounded px-3 py-1 outline outline-1 outline-green-400 hover:shadow-lg text-green-600">Order
                             Now</button>
-                            {{-- asdas --}}
+                        {{-- asdas --}}
                     </div>
                 </div>
             </div>

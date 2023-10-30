@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class HomePageController extends Controller
@@ -18,7 +19,10 @@ class HomePageController extends Controller
 
     public function products()
     {
-        return view('products');
+        $products = Product::all();
+        return view('products', [
+            'products' => $products
+        ]);
     }
 
     public function contactus()
