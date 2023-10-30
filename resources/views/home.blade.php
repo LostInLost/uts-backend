@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class=" mt-5" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-            <img src="{{ Vite::asset('resources/images/company1.png') }}" class="floating-img absolute" alt="">
+            <img src="{{ asset('build/assets/company1-f8293ae2.png') }}" class="floating-img absolute" alt="">
         </div>
         <div class="mt-[250px] xl:col-span-2 md:col-span-1 flex justify-center flex-wrap gap-5">
             <button
@@ -38,19 +38,19 @@
         <div class="col-span-2 flex justify-center -mt-5">
             <div class="grid grid-cols-5 gap-5">
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1300">
-                    <img src="{{ Vite::asset('resources/images/google.png') }}" width="200px" height="100px" alt="">
+                    <img src="{{ asset('build/assets/google-50eeaddd.png') }}" width="200px" height="100px" alt="">
                 </div>
                 <div class="my-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400">
-                    <img src="{{ Vite::asset('resources/images/ubig-logo-contact.png') }}"  alt="">
+                    <img src="{{ asset('build/assets/ubig-logo-contact-2edbf15b.png') }}"  alt="">
                 </div>
                 <div class="my-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">
-                    <img src="{{ Vite::asset('resources/images/main-logo-hires.png') }}"  alt="">
+                    <img src="{{ asset('build/assets/main-logo-hires-7492fe03.png') }}"  alt="">
                 </div>
                 <div class="my-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600">
-                    <img src="{{ Vite::asset('resources/images/1200px-Logo-Tokopedia.png') }}" class="w-[200px]  -ml-[80px]"  alt="">
+                    <img src="{{ asset('build/assets/1200px-Logo-Tokopedia-67a56e34.png') }}" class="w-[200px]  -ml-[80px]"  alt="">
                 </div>
                 <div class="my-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1700">
-                    <img src="{{ Vite::asset('resources/images/pngimg.com - microsoft_PNG10.png') }}" class="w-[200px] -ml-[80px]"  alt="">
+                    <img src="{{ asset('build/assets/pngimg.com - microsoft_PNG10-4bad04d3.png') }}" class="w-[200px] -ml-[80px]"  alt="">
                 </div>
             </div>
         </div>

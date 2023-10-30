@@ -11,14 +11,14 @@
             </p>
         </div>
         <div data-aos="fade-up-left" data-aos-duration="1000">
-            <img src="{{ Vite::asset('resources/images/features-icon.png') }}" alt="">
+            <img src="{{ asset('build/assets/features-icon-8d3131fa.png') }}" alt="">
         </div>
         <div class="col-span-2 mt-[50px] mx-auto">
             <div class="grid grid-cols-3 gap-8 mt-[20px]  ">
                 <div class="bg-white rounded p-3 relative w-[300px] "
                 data-aos="zoom-out-right" data-aos-delay="700" data-aos-duration="1000"
                 >
-                    <img src="{{ Vite::asset('resources/images/database.png') }}" class="outline outline-1 rounded-full bg-white  absolute  -top-8 -left-4"
+                    <img src="{{ asset('build/assets/database-d931d2a5.png') }}" class="outline outline-1 rounded-full bg-white  absolute  -top-8 -left-4"
                         width="60px" alt="">
                     <div class="divide-y">
                         <h1 class="text-center font-medium my-2">Manajemen Database Cepat</h1>
@@ -31,7 +31,7 @@
                 <div class="bg-white rounded p-3 relative w-[300px] "
                 data-aos="zoom-out-up" data-aos-delay="800" data-aos-duration="1000"
                 >
-                    <img src="{{ Vite::asset('resources/images/monitor.png') }}" class="outline outline-1 rounded-full bg-white  absolute  -top-8 -left-4"
+                    <img src="{{ asset('build/assets/monitor-835b25a4.png') }}" class="outline outline-1 rounded-full bg-white  absolute  -top-8 -left-4"
                         width="60px" alt="">
                     <div class="divide-y">
                         <h1 class="text-center font-medium my-2">Tampilan Menarik dan Simpel</h1>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="bg-white rounded p-3 relative w-[300px] "
                 data-aos="zoom-out-left" data-aos-delay="900" data-aos-duration="1000">
-                    <img src="{{ Vite::asset('resources/images/service.png') }}" class="rounded-full bg-white outline outline-1  absolute  -top-8 -left-4"
+                    <img src="{{ asset('build/assets/service-3ce27d13.png') }}" class="rounded-full bg-white outline outline-1  absolute  -top-8 -left-4"
                         width="60px" alt="">
                     <div class="divide-y">
                         <h1 class="text-center font-medium my-2">Maintenance Bertahap</h1>
