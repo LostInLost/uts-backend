@@ -27,6 +27,7 @@ class AuthController extends Controller
         ];
 
         if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
             return redirect('/dashboard');
         }
         return redirect()->back()->with('loginError', 'Email or Password wrong');
@@ -50,8 +51,16 @@ class AuthController extends Controller
         return redirect()->back()->with('registerError', 'Registery Not Successfully');
     }
 
-    public function logout()
+    public function logout(Request $request)
     {
-        if (Auth::logout()) return redirect('/login');
+        Auth::logout();
+        if (!Auth::check()) {
+            $request->session()->invalidate();
+
+            $request->session()->regenerateToken();
+
+            return redirect('/');
+        }
+        return redirect('/login');
     }
 }

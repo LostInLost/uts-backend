@@ -49,7 +49,7 @@
                 <button class="rounded px-3 py-1 outline outline-1 outline-green-200 hover:shadow-lg text-green-600">Order Now</button>
             </li>
             <li>
-                <a href="/login" class="rounded px-3 py-1 outline outline-1 outline-blue-500 hover:shadow-lg text-white bg-blue-600 hover:bg-blue-500 cursor-pointer">Login</a>
+                <a href="{{ (Auth::check() ? '/dashboard' : '/login') }}" class="rounded px-3 py-1 outline outline-1 outline-blue-500 hover:shadow-lg text-white bg-blue-600 hover:bg-blue-500 cursor-pointer">{{ (Auth::check() ? 'Dashboard' : 'Login') }}</a>
             </li>
         </ul>
     </nav>
