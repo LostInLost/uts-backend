@@ -12,7 +12,7 @@
                     <div class="rounded bg-white shadow-md w-[400px]">
                         <div class="divide-y">
                             <div class="relative">
-                                <img src="{{ asset($data->photo) }}" class="rounded-t" alt="">
+                                <img src="{{ asset('assets/products/'.$data->photo) }}" class="rounded-t h-[150px] object-cover w-full" alt="">
                             </div>
                             <div class="p-3">
                                 <h1 class="font-bold text-[24px] ">{{ $data->title }}</h1>

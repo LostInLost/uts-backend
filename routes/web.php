@@ -31,5 +31,15 @@ Route::middleware('guest')->group(function() {
 
 Route::middleware('auth')->group(function() {
     Route::post('/logout', [AuthController::class, 'logout']);
-    Route::get('/dashboard', [DashboardController::class, 'index']);
+    Route::prefix('/dashboard')->group(function() {
+        Route::get('/', [DashboardController::class, 'index']);
+        Route::prefix('/products')->group(function() {
+            Route::get('/', [DashboardController::class, 'indexProducts'])->name('products.index');
+            Route::get('/create', [DashboardController::class, 'indexCreateProducts']);
+            Route::get('/{slug}/edit', [DashboardController::class, 'indexEditProduct']);
+            Route::post('/create', [DashboardController::class, 'createProduct']);
+            Route::post('/{id}/delete', [DashboardController::class, 'deleteProduct']);
+            Route::post('/{id}/edit', [DashboardController::class, 'editProduct']);
+        });
+    });
 });
