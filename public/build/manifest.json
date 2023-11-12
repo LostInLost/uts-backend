@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-1a7f99d6.css",
+    "file": "assets/app-4acf6279.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -32,10 +32,6 @@
     "file": "assets/google-50eeaddd.png",
     "src": "resources/images/google.png"
   },
-  "resources/images/leline.png": {
-    "file": "assets/leline-820cbe47.png",
-    "src": "resources/images/leline.png"
-  },
   "resources/images/main-logo-hires.png": {
     "file": "assets/main-logo-hires-7492fe03.png",
     "src": "resources/images/main-logo-hires.png"
@@ -61,7 +57,7 @@
     "src": "resources/images/—Pngtree—gear parts icon cartoon_4630148.png"
   },
   "resources/js/app.js": {
-    "file": "assets/app-02317797.js",
+    "file": "assets/app-f97be9a7.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

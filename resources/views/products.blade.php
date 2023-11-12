@@ -12,7 +12,7 @@
                     <div class="rounded bg-white shadow-md w-[400px]">
                         <div class="divide-y">
                             <div class="relative">
-                                <img src="{{ asset($data->photo) }}" class="rounded-t" alt="">
+                                <img src="{{ asset($data->photo) }}" class="rounded-t object-cover w-full max-h-[200px]"  alt="">
                             </div>
                             <div class="p-3">
                                 <h1 class="font-bold text-[24px] ">{{ $data->title }}</h1>
@@ -39,7 +39,6 @@
                         <button
                             class="transition rounded px-3 py-1 outline outline-1 outline-green-400 hover:shadow-lg text-green-600">Order
                             Now</button>
-                        {{-- asdas --}}
                     </div>
                 </div>
             </div>

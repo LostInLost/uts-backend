@@ -15,10 +15,11 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
        Product::create([
-        'title' => 'Lelang Online',
-        'slug' => 'lelang-online',
-        'photo' => 'leline.png',
-        'description' => 'Aplikasi yang memudahkan pelelang dan penawar melakukan lelang secara Online.'
+        'title' => 'Perpustakaan',
+        'slug' => 'perpustakaan',
+        'photo' => 'perpus.jpg',
+        'description' => 'testing'
        ]);
+       
     }
 }
