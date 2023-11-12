@@ -20,6 +20,12 @@ class DashboardController extends Controller
         ]);
     }
 
+    public function detailProduct($slug)
+    {
+        $product = Product::where('slug', $slug)->first();
+        return view('dashboard.products.detail', compact('product'));
+    }
+
     public function indexCreateProducts() {
         return view('dashboard.products.create');
     }
@@ -53,6 +59,7 @@ class DashboardController extends Controller
 
 
     }
+
     public function deleteProduct($id)
     {
         $products = Product::find($id);
@@ -62,12 +69,13 @@ class DashboardController extends Controller
         }
 
         File::delete(public_path('assets/products/'. $products->photo));
-        $products->deleteForce();
+        $products->forceDelete();
 
         return redirect()->route('products.index');
 
 
     }
+
     public function indexEditProduct($slug)
     {
         $product = Product::where('slug', $slug)->first();

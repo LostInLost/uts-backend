@@ -40,6 +40,7 @@ Route::middleware('auth')->group(function() {
             Route::post('/create', [DashboardController::class, 'createProduct']);
             Route::post('/{id}/delete', [DashboardController::class, 'deleteProduct']);
             Route::post('/{id}/edit', [DashboardController::class, 'editProduct']);
+            Route::get('/{slug}', [DashboardController::class, 'detailProduct']);
         });
     });
 });

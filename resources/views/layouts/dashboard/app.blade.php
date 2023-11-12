@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('build/assets/app-4acf6279.css') }}">
-    <script type="module" src="{{ asset('build/assets/app-f97be9a7.js') }}"></script>
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    {{-- <link rel="stylesheet" href="{{ asset('build/assets/app-4acf6279.css') }}">
+    <script type="module" src="{{ asset('build/assets/app-f97be9a7.js') }}"></script> --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Dashboard</title>
 </head>
 
@@ -56,6 +56,8 @@
     <div class="max-w-screen-xl container  mx-auto p-4">
         @yield('content')
     </div>
+
+    @yield('js')
 </body>
 
 </html>

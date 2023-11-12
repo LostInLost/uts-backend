@@ -13,7 +13,7 @@
                         <h1>Image Pict</h1>
 
                         <div class="flex items-center justify-center w-full">
-                            <label for="dropzone-file"
+                            <label for="dropzone-file" id="drop-image"
                                 class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                                 <div class="flex flex-col items-center justify-center pt-5 pb-6">
                                     <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
@@ -28,8 +28,14 @@
                                     <p class="text-xs text-gray-500 dark:text-gray-400">PNG or JPG
                                     </p>
                                 </div>
-                                <input id="dropzone-file" name="photo" type="file" class="disabled" />
                             </label>
+                            <input id="dropzone-file" name="photo" type="file" class="hidden" onchange="showName(event)" />
+                            <div id="showFile" class="hidden">
+                                <span id="nameFile" class=" mb-3  mr-3"></span>
+                                <button type="button" onclick="deleteFile()"
+                                    class="p-3 focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Delete</button>
+                            </div>
+
                         </div>
                         @error('photo')
                             <div>
@@ -78,4 +84,21 @@
         </div>
 
     </section>
+@endsection
+
+@section('js')
+    <script type="text/javascript">
+        const showName = (event) => {
+            const files = event.target.files
+            const dropImage = document.getElementById('drop-image')
+            console.log(files[0]?.name)
+            if (!files[0]?.name || files[0]?.name == '') {
+                dropImage.classList.remove('hidden')
+                return file.classList.add('hidden')
+            }
+            dropImage.classList.add('hidden')
+            return file.classList.remove('hidden')
+        }
+        const file = document.getElementById('dropzone-file')
+    </script>
 @endsection
