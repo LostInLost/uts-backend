@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 
 class DashboardController extends Controller
@@ -16,7 +18,7 @@ class DashboardController extends Controller
     public function indexProducts() {
         $products = Product::all();
         return view('dashboard.products.index', [
-            'products' => $products
+            'products' => $products->load('user')
         ]);
     }
 
@@ -32,6 +34,7 @@ class DashboardController extends Controller
 
     public function createProduct(Request $request)
     {
+        $user = User::find(Auth::user()->id);
         $request->validate([
             'photo' => ['required', 'max:2048', 'mimes:png,jpg'],
             'title' => ['required'],
@@ -51,7 +54,7 @@ class DashboardController extends Controller
             'description' => $request->description
         ];
 
-        $create = Product::create($data);
+        $create = $user->products()->create($data);
         if ($create) {
             $file->move(public_path('assets/products/'), $fileName);
             return redirect()->route('products.index');
