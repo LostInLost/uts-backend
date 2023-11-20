@@ -41,6 +41,9 @@
                 <a href="/products" class="text-base hover:text-white {{ Request::is('products') ? 'font-bold text-white' : '' }}">Products</a>
             </li>
             <li>
+                <a href="/articles" class="text-base hover:text-white {{ Request::is('articles') ? 'font-bold text-white' : '' }}">Articles</a>
+            </li>
+            <li>
                 <a href="/contactus" class="text-base hover:text-white {{ Request::is('contactus') ? 'font-bold text-white' : '' }}">Contact Us</a>
             </li>
         </ul>
@@ -49,7 +52,7 @@
                 <button class="rounded px-3 py-1 outline outline-1 outline-green-200 hover:shadow-lg text-green-600">Order Now</button>
             </li>
             <li>
-                <a href="{{ (Auth::check() ? '/dashboard' : '/login') }}" class="rounded px-3 py-1 outline outline-1 outline-blue-500 hover:shadow-lg text-white bg-blue-600 hover:bg-blue-500 cursor-pointer">{{ (Auth::check() ? 'Dashboard' : 'Login') }}</a>
+                <a href="{{ (Auth::check() ? '/dashboard' : '/login') }}" class="rounded px-3 py-2 outline outline-1 outline-blue-500 hover:shadow-lg text-white bg-blue-600 hover:bg-blue-500 cursor-pointer">{{ (Auth::check() ? 'Dashboard' : 'Login') }}</a>
             </li>
         </ul>
     </nav>

@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomePageController;
+use App\Models\Article;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +22,10 @@ Route::get('/', [HomePageController::class, 'index']);
 Route::get('/features', [HomePageController::class, 'features']);
 Route::get('/products', [HomePageController::class, 'products']);
 Route::get('/contactus', [HomePageController::class, 'contactus']);
+Route::get('/articles', [HomePageController::class, 'articles']);
+Route::get('/articles/{id}/print', [HomePageController::class, 'printArticles']);
+Route::get('/articles/{id}', [HomePageController::class, 'detailArticle']);
+
 
 Route::get('/register', [AuthController::class, 'register']);
 Route::post('/register', [AuthController::class, 'store']);
@@ -41,6 +47,15 @@ Route::middleware('auth')->group(function() {
             Route::post('/{id}/delete', [DashboardController::class, 'deleteProduct']);
             Route::post('/{id}/edit', [DashboardController::class, 'editProduct']);
             Route::get('/{slug}', [DashboardController::class, 'detailProduct']);
+        });
+        Route::prefix('articles')->group(function() {
+            Route::get('/', [ArticleController::class, 'index'])->name('articles.index');
+            Route::get('/create', [ArticleController::class, 'createIndex']);
+            Route::post('/create', [ArticleController::class, 'createArticle']);
+            Route::get('/{id}', [ArticleController::class, 'indexDetail']);
+            Route::get('/{id}/edit', [ArticleController::class, 'editIndex']);
+            Route::post('/{id}/edit', [ArticleController::class, 'editArticle']);
+            Route::post('{id}/delete', [ArticleController::class, 'deleteArticle']);
         });
     });
 });

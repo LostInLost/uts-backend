@@ -40,6 +40,10 @@
                         <a href="/dashboard/products"
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ Request::is('dashboard/products') ? 'md:text-blue-700' : 'md:hover:text-blue-700' }} md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Products</a>
                     </li>
+                    <li class="my-auto">
+                        <a href="/dashboard/articles"
+                            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ Request::is('dashboard/articles') ? 'md:text-blue-700' : 'md:hover:text-blue-700' }} md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Articles</a>
+                    </li>
                     <li>
                         <form action="/logout" method="POST">
                             @csrf
